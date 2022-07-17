@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO FOR ME</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+<section>
+    <!--CV with image-->
+    <section  id="CTA"class="cta">
+           <h1>Get in Touch <br> Anywhere from The World</h1>
+           <a href="#CONTACTME" class="hero-btn">Contact US</a>
+    </section>
+     <!--CV with contact form-->
+    <section>
+            <div id="CONTACTME"class="contact">
+                <h1>CONTACT ME</h1>
+            <div class="content">
+                <!--Content left-->
+                <div class="content-left">
+                    <div class="text">Get in touch</div>
+                    <p>if you have any question fill in the content form, and we will answer you shortly. if you are living nearby, come visit Islington at one of our comfortable office</p>
+                    <div class="icon">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                            <div class="heads">Name</div>
+                            <div class="sub-title">Prateek Shrestha</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker"></i>
+                            <div class="info">
+                            <div class="heads">Address</div>
+                            <div class="sub-title">Bhratpur-10,Chitwan</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                            <div class="heads">Email</div>
+                            <div class="sub-title">Prateekshrestha1649@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Content Right-->
+                <div class="content-right">
+                    <div class="text">Send us Message </div>
+                    <form name="Contact">
+                        <div class="forms" >
+                            <div class="fieldname">
+                                <input type="text" name="name" placeholder="Name">
+                            </div>
+                            <div class="fieldcontact">
+                                <input type="number" name="contact" placeholder="Contact">
+                            </div>
+                        </div> 
+                        
+                            <div class="fieldemail">
+                                <input type="text" name="email" placeholder="Email">
+                            </div>
+                            <div class="fieldtext">
+                                <textarea name="text"  cols="30" rows="10" placeholder="Enter your message"></textarea>
+                            </div>
+                        
+                        <div class="button">
+                            <button id="buttom" type="submit" onclick="validate()">Send Message</button>
+                        </div>  
+                    </form>   
+                    
+                </div>
+            </div>
+            </div>
+        </section>
+    </section>
+    <!----------JavaScript in Button-------------->
+    <script>
+        function validate(){
+            var name = document.forms["Contact"]["name"].value;
+            var contact = document.forms["Contact"]["contact"].value;
+            var email = document.forms["Contact"]["email"].value;
+            var text = document.forms["Contact"]["text"].value;
+            if( name =="" || contact =="" || email =="" || text ==""){
+                alert("The form is empty. Please fill up the form")
+            }
+            else{
+                alert("Thank you for your feedback")
+            }
+        }
+
+    </script>
+</body>
+</html>
